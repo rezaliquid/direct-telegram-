@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      NFC
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">NFC</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container" class="ion-padding">
+    <ion-item fill="outline">
+      <ion-label position="floating">No HP</ion-label>
+      <ion-input type="number" [(ngModel)]="form.no_hp" placeholder="Enter text" required></ion-input>
+    </ion-item>
+    <ion-button (click)="lokasi()" expand="block">direct Telegram</ion-button> <!-- Mengubah teks tombol menjadi "direct Telegram" -->
+    <ion-button expand="block">NFC</ion-button>
+  </div>
+</ion-content>
